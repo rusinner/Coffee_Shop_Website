@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,600&family=Roboto:wght@400;500;700&display=swap');
-
+// global variables
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
@@ -39,7 +39,7 @@ html{
 body{
     background: var(--bg);
 }
-
+// header section
 .header{
     background: var(--bg);
     display: flex;
@@ -169,5 +169,128 @@ body{
             letter-spacing: .2rem;
         }
     }
+    .active{
+        right: 0;
+    }
+    .active-search{
+        transform: scaleY(1);
+    }
     
 }
+// home section
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('./images/home-img.jpeg');
+    background-size: cover;
+    background-position: center;
+    .btn{
+        width: 35%;
+        text-align: center;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background: var(--main-color);
+        cursor: pointer;
+        &:hover{
+            letter-spacing: .2rem;
+        }
+    }
+    .section{
+        padding: 2rem 7%;
+    }
+    .content{
+        max-width: 60rem;
+        h3{
+            font-size: 6rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p{
+            font-size: 1.7rem;
+            font-weight: lighter;
+            line-height: 1.8;
+            padding: 1rem 0;
+            color: #eee;
+        }
+    }
+}
+
+// About section
+
+.about{
+    .heading{
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+    }
+}
+
+
+// media queries 
+
+@media screen and (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .section{
+        padding: 2rem;
+    }
+    .header{
+        padding:1.5rem 2rem ;
+        .navbar{
+            display: inline-block;
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            background: #fff;
+            width:30rem;
+            height: calc(100vh - 9.5rem);
+
+            a{
+                display: block;
+                margin: 1.5rem;
+                padding: .5rem;
+                font-size: 2rem;
+                color: var(--black);
+            }
+        }
+        #menu-btn{
+            display: inline-block !important;
+        }
+        .active{
+            right:0;
+        }
+        .search-form{
+            width: 90%;
+            right: 2rem;
+        }
+       
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+        .content{
+            h3{
+                font-size: 4.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:450px){
+html{
+font-size: 50%;
+}
+}
+
