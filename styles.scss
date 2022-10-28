@@ -228,7 +228,106 @@ body{
         text-transform: uppercase;
         padding-bottom: 3.5rem;
         font-size: 4rem;
+        span{
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
     }
+    .row{
+        display: flex;
+        align-items: center;
+        background: var(--black);
+        flex-wrap: wrap;
+        .image{
+            flex: 1 1 45rem;
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+          flex: 1 1 45rem;
+          padding: 2rem;
+           .btn{
+            width: 35%;
+            text-align: center;
+            margin-top: 1rem;
+            display: inline-block;
+            padding: .7rem 3rem;
+            font-size: 1.7rem;
+            color: #fff;
+            background: var(--main-color);
+            cursor: pointer;
+            &:hover{
+                letter-spacing: .2rem;
+            }
+          }  
+          h3{
+            font-size: 3rem;
+            color: #fff;
+          }
+          p{
+            font-size: 1.6rem;
+            color: #ccc;
+            padding: 1rem 0;
+            line-height: 1.8;
+          }
+        }
+    }
+}
+
+// Menu Section
+.menu{
+    .btn{
+        width:40%;
+        text-align: center;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .3rem .5rem;
+        font-size: 1.3rem;
+        color: #fff;
+        background: var(--main-color);
+        cursor: pointer;
+        &:hover{
+            letter-spacing: .2rem;
+        }
+      }
+      .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap: 1.5rem;
+        .box{
+            padding: 5rem;
+            text-align: center;
+            border: var(--border);
+            &:hover {
+                background: #fff;
+                h3 , .price ,span{
+                    color: var(--black) !important;
+
+                }
+                
+            }
+            
+            img{
+                height: 10rem;
+            }
+            h3{
+                color: #fff;
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+            .price{
+                color: #fff;
+                font-size: 2.5rem;
+                padding: .5rem 0;
+                span{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    text-decoration: line-through;
+                }
+            }
+        }
+      }  
 }
 
 
