@@ -447,6 +447,77 @@ body{
     }
 }
 
+.contact{
+    .heading{
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+        span{
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+    }
+    .row{
+        display: flex;
+        gap: 1rem;
+        background:var(--black);
+        .map{
+            flex: 1 1 45rem;
+            width: 100%;
+            object-fit: cover;
+
+        }
+        form{
+            flex: 1 1 45rem;
+            padding: 5rem 2rem;
+            text-align: center;
+
+            h3{
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                color: #fff;
+            }
+            .inputBox{
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                background: var(--bg);
+                border: var(--border);
+                span{
+                    color: #fff;
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                }
+                input{
+                    width: 100%;
+                    padding: 2rem;
+                    font-size: 1.7rem;
+                    color: #fff;
+                    text-transform: none;
+                    background: none;
+                }
+            }
+        }
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .7rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background: var(--main-color);
+        cursor: pointer;
+        &:hover{
+            letter-spacing: .2rem;
+        }
+    }
+}
+
 // media queries 
 
 @media screen and (max-width:991px) {
