@@ -463,6 +463,8 @@ body{
         display: flex;
         gap: 1rem;
         background:var(--black);
+        align-items: center;
+        flex-wrap: wrap;
         .map{
             flex: 1 1 45rem;
             width: 100%;
@@ -471,7 +473,6 @@ body{
         }
         form{
             flex: 1 1 45rem;
-            padding: 5rem 2rem;
             text-align: center;
 
             h3{
